@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Gopalan's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><u>Harsh Gopalan</u></div>
+        <div> 
+            <ul class="nav-links">
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#experience">Experience</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Harsh Gopalan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/MyImage.png" alt="Harsh Gopalan Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">
+                <span id="typed-name"></span>
+            </h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('assets/Harsh Gopalan - RESUME (2024).pdf')"
+                >CV/Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'"
+                >Contact</button>
+            </div>
+            <div id="social-container">
+                <!--
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href 
+                ='https://www.linkedin.com/in/harshgopalan/'"/> -->
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href 
+                ='https://github.com/hxg190023'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <br>
+        <div class="section-container">
+            <!--
+            <div class="section__pic-container">
+                <img 
+                src="./assets/about-pic.png" 
+                alt="Profile Picture" 
+                class="about-pic"
+                />
+            </div>
+            -->
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/briefcase.png" 
+                        alt="Experience Icon" 
+                        class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>
+                            2 Summer Software Engineering Internships (2022, 2023) <br>
+                            Software Engineer @ Bank of America (July 2024 - Present)
+                        </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>
+                            B.S. Bachelor's Degree in Computer Science <br>(The University of Texas at Dallas)
+                        </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Awards and Honors Icon" class="icon"/>
+                        <h3>Awards & Honors</h3>
+                        <p>
+                            Dean's List
+                            <br>
+                            Latin Honors: Magna Cum Laude
+                            <br>
+                            (The University of Texas at Dallas)
+                        </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hello! I'm a passionate Software Engineer dedicated to crafting clean, efficient, and innovative solutions. 
+                        With a strong foundation in computer science and a keen eye for detail, I thrive on turning complex problems into elegant, user-friendly applications. 
+                        My journey in the world of programming has equipped me with a diverse skill set, ranging from front-end technologies to back-end development. 
+                        My goal is to contribute to meaningful projects that make a positive impact on people's lives. Let's connect and explore the exciting possibilities that the world of software development has to offer!
+                    </p>
+                </div>
+                <br>
+                <div class="container">                      
+                    <div class="row text-center justify-content-center mb-5">
+                        <div class="col-xl-6 col-lg-8">
+                            <h2 class="font-weight-bold"><center>My Timeline</center></h2>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                                <div class="timeline-step">
+                                    <div class="timeline-content">
+                                        <img src="./assets/CHSLogo.png" alt="CHS Logo" class="timeline-logo"/>
+                                        <p class="h6 mt-3 mb-1"><b>2016-2020</b></p>
+                                        <p class="h6 text-muted mb-0 mb-lg-0">Completed High School at Coppell High School</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-step">
+                                    <div class="timeline-content">
+                                        <img src="./assets/ut dallas logo.png" alt="CHS Logo" class="timeline-logo"/>
+                                        <p class="h6 mt-3 mb-1"><b>2020</b></p>
+                                        <p class="h6 text-muted mb-0 mb-lg-0">Began B.S in CS at UT Dallas</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-step">
+                                    <div class="timeline-content">
+                                        <img src="./assets/HCL Logo.png" alt="CHS Logo" class="timeline-logo"/>
+                                        <p class="h6 mt-3 mb-1"><b>2022</b></p>
+                                        <p class="h6 text-muted mb-0 mb-lg-0">SWE Internship at HCLTech</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-step">
+                                    <div class="timeline-content">
+                                        <img src="./assets/BOFA Logo.png" alt="CHS Logo" class="timeline-logo"/>
+                                        <p class="h6 mt-3 mb-1"><b>2023</b></p>
+                                        <p class="h6 text-muted mb-0 mb-lg-0">SWE Internship at Bank of America</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-step mb-0">
+                                    <div class="timeline-content">
+                                        <img src="./assets/ut dallas logo.png" alt="CHS Logo" class="timeline-logo"/>
+                                        <p class="h6 mt-3 mb-1"><b>2023</b></p>
+                                        <p class="h6 text-muted mb-0 mb-lg-0">Graduated from UT Dallas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'"/>  
+    </section>
+    <br><br><br><br><br><br><br>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/java.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/c++.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/python.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/html.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/css-3.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/database.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/icons8-teradata-480.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Teradata</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/unix-icon-1940x2048-3dtyhlda.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>UNIX</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/mips.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>MIPS Assembly</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technologies & Frameworks</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/linux.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Linux</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/github.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Github</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/pandas.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Pandas</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/numpy-icon-958x1024-us4t1h5z.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>NumPy</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/google-cloud-dialogflow.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Dialogflow CX</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/Backstage_Identity_Assets_Artwork_RGB_04_Icon_Teal.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Backstage</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow" onclick="location.href='./#projects'"
+        />
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/KnowYourProfessor.jpeg"
+                    alt="Project 1"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Know Your Professor</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/anirranjan/hackutd-2022'">Github</button>
+                    <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://devpost.com/software/knowmyprofessor'">Devpost</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Screenshot 2024-01-18 at 10.27.17 PM.png"
+                    alt="Project 2"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Virtual TA Chatbot</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/anirranjan/4485-virtualta'">Github</button>
+                    <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://www.youtube.com/watch?v=-0li5ggroWQ'">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Screenshot 2024-01-18 at 10.45.08 PM.png"
+                    alt="Project 3"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Java FX Calculator</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/hxg190023/Java-FX-Calculator'">Github</button>
+                    <!--
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Live Demo</button> -->
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" 
+        onclick="location.href='./#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/gmail.png"
+                alt="Email icon"
+                class="icon contact-icon"
+                />
+                <p><a href="mailto:exampleemail@gmail.com">Gmail</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/harshgopalan/">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#experience">Experience</a></li>
+                    <li> <a href="#projects">Projects</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Harsh Gopalan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
